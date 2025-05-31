@@ -6,7 +6,7 @@ public class CalculatorClient {
     public static void main(String[] args) {
         try {
             // Connect to the RMI registry running on localhost:1099
-            Registry registry = LocateRegistry.getRegistry("localhost", 1099);
+            Registry registry = LocateRegistry.getRegistry("localhost", 2099);
             
             // Look up the remote calculator object
             Calculator calculator = (Calculator) registry.lookup("CalculatorService");
